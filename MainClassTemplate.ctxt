@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=MainClassTemplate
+comment0.text=\r\n\ \ Lab\ (or\ Programming\ Project)\ X\:\ Name\ of\ Lab\ or\ PP<br>\r\n\r\n\ \ The\ <code>MainClassTemplate</code>\ class\ provides\ a\ main\ method\r\n\ \ for\ a\ program\ that\ does\ X.\r\n\r\n\ \ A\ more\ detailed\ description\ goes\ here,\ if\ necessary.\r\n\r\n\ \ @author\ [your\ name]\r\n\ \ @author\ [your\ partner's\ name]\r\n\ \ @author\ [with\ assistance\ from\ ...\ (including\ instructor/TAs)]\r\n\ \ @author\ [working\ side-by-side\ with\ ...]\r\n\ \ @version\ [last_modification_date]\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ \ The\ main\ function\ initiates\ execution\ of\ this\ program.\r\n\ \ \ \ @param\ \ \ \ String[]\ args\ not\ used\ in\ this\ program\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ (but\ main\ methods\ always\ need\ this\ parameter)\r\n
+comment2.params=fileName
+comment2.target=void\ printLineInfo(java.lang.String)
+comment3.params=reader\ base
+comment3.target=java.util.ArrayList\ getWordsContaining(WordReader,\ java.lang.String)
+comment4.params=reader
+comment4.target=void\ wordFrequency1(WordReader)
+comment5.params=reader
+comment5.target=void\ wordFrequency2(WordReader)
+numComments=6

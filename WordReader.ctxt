@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=WordReader
+comment0.text=\r\n\ This\ class\ contains\ code\ to\ read\ line\ from\ a\ file\ and\ to\r\n\ break\ those\ lines\ up\ into\ individual\ words.\r\n\ \r\n\ @author\ Alyce\ Brady\r\n\ @version\ 9\ April\ 2020\r\n
+comment1.params=filename
+comment1.target=WordReader(java.lang.String)
+comment1.text=\ Constructs\ an\ object\ that\ can\ read\ lines\ from\ a\ file,\ or\ can\r\n\ \ report\ on\ word\ frequencies\ for\ every\ word\ in\ the\ file.\ \ It\ uses\r\n\ \ the\ following\ regular\ expression\ to\ parse\ words\:\ ("\\\\P{L}+")\r\n\ \ (Thanks\ to\ Pierre\ C\ on\ Stack\ Overflow.)\r\n\ \ \ \ \ \ @param\ filename\ \ the\ name\ of\ the\ file\ to\ open\ for\ reading\r\n
+comment2.params=
+comment2.target=java.lang.String\ getNextLine()
+comment2.text=\ Reads\ the\ next\ non-empty\ line\ from\ the\ file\ provided\ to\ the\ constructor.\r\n\ \ Precondition\:\ the\ constructor\ must\ have\ successfully\ opened\ the\ file\ for\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ reading\r\n\ \ \ \ \ \ @return\ String\ \ contains\ the\ contents\ of\ the\ line\ that\ was\ just\ read\r\n
+comment3.params=lineOfText
+comment3.target=java.util.ArrayList\ breakIntoWords(java.lang.String)
+comment3.text=\ Takes\ a\ line\ of\ text\ containing\ multiple\ words\ and\ returns\ an\r\n\ \ ArrayList\ of\ the\ individual\ words\ that\ were\ in\ the\ line.\ \ It\ uses\r\n\ \ the\ following\ regular\ expression\ to\ parse\ words\:\ ("\\\\P{L}+")\r\n\ \ (Thanks\ to\ Pierre\ C\ on\ Stack\ Overflow.)\r\n\ \ Note\ that\ this\ method\ considers\ hyphens,\ apostrophes,\ and\ other\r\n\ \ punctuation\ to\ be\ word\ separators,\ so\ "don't"\ or\ "fast-forward"\ would\r\n\ \ each\ break\ into\ two\ words.\r\n\ \ \ \ \ \ @param\ lineOfText\ \ \ a\ string\ containing\ 1\ or\ more\ words\r\n\ \ \ \ \ \ @return\ \ a\ list\ of\ the\ words\ that\ were\ in\ the\ string\r\n
+comment4.params=
+comment4.target=java.util.ArrayList\ getFullWordList()
+comment4.text=\ Gets\ a\ list\ of\ all\ the\ distinct\ words\ in\ this\ book\ (each\ word\ occurs\r\n\ \ only\ once\ in\ the\ list).\ \ Words\ have\ all\ been\ converted\ to\ lower\ case\r\n\ \ to\ avoid\ duplication\ based\ on\ capitalization;\ for\ example,\ "They"\ and\r\n\ \ "they"\ will\ both\ appear\ as\ "they"\ in\ the\ word\ list.\ \ This\ method\ can\r\n\ \ called\ anytime\ after\ this\ object\ is\ constructed;\ it\ does\ not\ depend\ on\r\n\ \ calls\ to\ the\ getNextLine\ method.\r\n\ \ \ \ \ \ @return\ \ \ \ \ \ \ the\ list\ of\ words\ in\ the\ book\r\n
+comment5.params=word
+comment5.target=int\ getCountFor(java.lang.String)
+comment5.text=\ Returns\ how\ many\ times\ the\ given\ word\ occurs\ in\ this\ book\r\n\ \ (ignoring\ capitalization).\ \ For\ example,\ if\ this\ method\ is\ called\r\n\ \ with\ either\ "They"\ or\ "they"\ as\ a\ parameter,\ it\ will\ return\ how\ many\r\n\ \ times\ the\ word\ occurs\ with\ any\ capitalization\ (including\ "THEY").\r\n\ \ This\ method\ can\ called\ anytime\ after\ this\ object\ is\ constructed;\ it\r\n\ \ does\ not\ depend\ on\ calls\ to\ the\ getNextLine\ method.\r\n\ \ \ \ \ \ @param\ word\ \ \ the\ word\ to\ count\r\n\ \ \ \ \ \ @return\ \ \ \ \ \ \ the\ number\ of\ times\ <code>word</code>\ occurs\ in\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this\ book\r\n
+comment6.params=mapReader
+comment6.target=void\ populateMap(java.io.BufferedReader)
+comment6.text=\ Populates\ a\ map\ of\ word-count\ pairs\ used\ by\ the\ getFullWordList\r\n\ \ and\ getCountFor\ methods.\r\n\ \ \ \ \ \ @return\ void\r\n
+comment7.params=lineOfText
+comment7.target=java.lang.String[]\ splitLine(java.lang.String)
+comment7.text=\ Splits\ the\ given\ line\ into\ an\ array\ of\ individual\ words.\r\n\ \ Works\ with\ accents\ (at\ least\ from\ European\ countries).\r\n\ \ \ \ \ \ @param\ lineOfText\ a\ line\ of\ text\ read\ in\ using\ this\ WordReader\r\n\ \ \ \ \ \ @return\ an\ array\ of\ the\ words\ that\ were\ in\ the\ line\r\n
+numComments=8
